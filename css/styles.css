@@ -1,3 +1,37 @@
 /* Base */
 html, body {
   background-color: #EDF5E1; }
+
+.header {
+  height: 100vh;
+  background-color: #5CDB95; }
+  .header .navbar {
+    background-color: #5CDB95;
+    font-family: 'Krungthep'; }
+    .header .navbar .navbar-brand .navbar-item {
+      display: block !important;
+      text-align: center; }
+      .header .navbar .navbar-brand .navbar-item h1, .header .navbar .navbar-brand .navbar-item p, .header .navbar .navbar-brand .navbar-item a {
+        color: #05386B; }
+    .header .navbar .navbar-brand .navbar-burger {
+      margin-top: 10px; }
+    .header .navbar .navbar-menu a {
+      color: #05386B; }
+
+.chat .typ01-column .typ01-avatar {
+  height: 40vh;
+  margin-top: 10vh; }
+
+/* Desktop  only */
+@media only screen and (min-width: 1090px) {
+  .header {
+    height: 80vh; }
+    .header .navbar .navbar-brand {
+      margin-left: 95px; }
+    .header .navbar .navbar-menu {
+      margin-left: 50px; }
+      .header .navbar .navbar-menu .navbar-item:hover {
+        background: #05386B;
+        color: #EDF5E1; }
+  .chat .typ01-column .typ01-avatar {
+    height: 50vh; } }

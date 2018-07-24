@@ -3,3 +3,68 @@
 html, body{
 	background-color: $loafer;
 }
+
+.header{
+	height: 100vh;
+	background-color: $pastel-green;
+
+	.navbar{
+		background-color: $pastel-green;
+		font-family: 'Krungthep';
+		.navbar-brand{
+
+			.navbar-item{
+				display: block !important;
+				text-align: center;
+				h1, p, a{
+					color: $catalina-blue;
+				}
+			}
+			.navbar-burger{
+				margin-top: 10px;
+			}
+		}
+		.navbar-menu{
+			a{
+				color: $catalina-blue;
+			}
+		}
+	}
+}
+
+.chat{
+	.typ01-column{
+		.typ01-avatar{
+			height: 40vh;
+			margin-top: 10vh;
+		}
+	}
+}
+
+/* Desktop  only */
+@media only screen and (min-width: 1090px) {
+	.header{
+		height: 80vh;
+		.navbar{
+			.navbar-brand{
+				margin-left: 95px;
+			}
+			.navbar-menu{
+				margin-left: 50px;
+				.navbar-item{
+					&:hover{
+						background: $catalina-blue;
+						color: $loafer;
+					}
+				}
+			}
+		}
+	}
+	.chat{
+		.typ01-column{
+			.typ01-avatar{
+				height: 50vh;
+			}
+		}
+	}
+}
