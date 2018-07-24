@@ -39,10 +39,25 @@ html, body{
 			margin-top: 10vh;
 		}
 	}
+
+	.start-chat{
+		font-family: 'Krungthep';
+		text-align: center;
+		.title, .subtitle{
+			color: $loafer;
+		}
+		.button{
+			background-color: $lochinvar;
+			color: $loafer;
+			border: 0px;
+			box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.16);
+			height: 50px;
+		}
+	}
 }
 
 /* Desktop  only */
-@media only screen and (min-width: 1090px) {
+@media only screen and (min-width: 1024px) {
 	.header{
 		height: 80vh;
 		.navbar{
@@ -66,5 +81,27 @@ html, body{
 				height: 50vh;
 			}
 		}
+		/** wait...STARCH MASKS?!?!? **/
+		.start-chat{
+			margin-top: 15vh;
+			.title{
+				font-size: 48px;
+			}
+			.subtitle{
+				max-width: 50vw;
+				word-wrap: break-word;
+				font-size: 24px;
+			}
+			.button{
+				width: 300px;
+				height: 90px;
+				font-size: 24px;
+				&:hover{
+					background: $loafer;
+					color: $catalina-blue;
+				}
+			}
+		}
 	}
+
 }
