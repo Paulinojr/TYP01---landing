@@ -56,6 +56,27 @@ html, body{
 	}
 }
 
+.about{
+	margin-top: 10px;
+	.title{
+		font-family: 'Krungthep';
+		color: $catalina-blue;
+		text-align: center;
+	}
+	p{
+		font-family: 'Krungthep';
+		color: $catalina-blue;
+		text-align: center;
+		font-size: 16px;
+	}
+	.subtitle{
+		font-family: 'Krungthep';
+		color: $catalina-blue;
+		text-align: center;
+		margin-top: 20px;
+	}
+}
+
 /* Desktop  only */
 @media only screen and (min-width: 1024px) {
 	.header{
@@ -103,5 +124,4 @@ html, body{
 			}
 		}
 	}
-
 }
